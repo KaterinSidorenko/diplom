@@ -20,6 +20,8 @@ The distribution of laboratory work options and the creation of students is also
 1.Полное сравнение.
 2.Сравнение без переменных.
 3.Сравнение по AST дереву .
+
+
 ![Sktenshot](https://github.com/KaterinSidorenko/diplom/blob/master/choiseLab.png)
 ![Sktenshot](https://github.com/KaterinSidorenko/diplom/blob/master/ChoiseLabRab.png)
 
