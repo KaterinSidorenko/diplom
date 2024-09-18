@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Фон кнопки с закругленными углами -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp"/>
+            <solid android:color="#80000000"/> <!-- Полупрозрачный черный цвет -->
+        </shape>
+    </item>
+    <!-- Иконка кнопки -->
+    <item android:right="24dp">
+        <bitmap
+            android:src="@drawable/ic_back"
+            android:tint="@color/perple"
+            android:gravity="center_vertical|start"
+            android:layout_marginLeft="16dp"/>
+    </item>
+</layer-list>

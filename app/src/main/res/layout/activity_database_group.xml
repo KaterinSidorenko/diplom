@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!-- New FrameLayout for additional shapes -->
+        <FrameLayout
+            android:id="@+id/shapeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent">
+
+            <!-- Triangle shape -->
+            <ImageView
+                android:id="@+id/triangleShape"
+                android:layout_width="520dp"
+                android:layout_height="520dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginEnd="120dp"
+                android:rotation="45"
+                android:src="@drawable/shape_triangle"
+                app:tint="@color/white" />
+
+            <!-- Small square shape -->
+            <ImageView
+                android:id="@+id/squareShape"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="-172dp"
+                android:layout_marginEnd="0dp"
+                android:rotation="45"
+                android:src="@drawable/shape_square"
+                app:tint="@color/perple" />
+
+            <!-- Linear gradient shape -->
+            <View
+                android:id="@+id/gradientShape"
+                android:layout_width="1174dp"
+                android:layout_height="540dp"
+                android:layout_marginTop="-24dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/background_gradient"
+                android:rotation="45" />
+
+
+            <FrameLayout
+                android:id="@+id/screen"
+                android:layout_width="360dp"
+                android:layout_height="600dp"
+                android:layout_gravity="center"
+                android:background="@drawable/screen_background">
+                <!-- Triangle shape -->
+                <ImageView
+                    android:id="@+id/triangleShape4"
+                    android:layout_width="520dp"
+                    android:layout_height="520dp"
+                    android:layout_marginTop="-50dp"
+                    android:layout_marginEnd="120dp"
+                    android:rotation="45"
+                    android:src="@drawable/shape_triangle"
+                    app:tint="#3EFFFFFF" />
+
+                <!-- Small square shape -->
+                <ImageView
+                    android:id="@+id/squareShape3"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="-172dp"
+                    android:layout_marginEnd="0dp"
+                    android:rotation="45"
+                    android:src="@drawable/shape_square"
+                    app:tint="@color/perple" />
+
+
+                <!-- Screen Content -->
+                <LinearLayout
+                    android:layout_width="325dp"
+                    android:layout_height="567dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <!-- Login Form -->
+                    <LinearLayout
+                        android:id="@+id/login"
+                        android:layout_width="320dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="30dp"
+                        android:paddingTop="156dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnBack"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="start"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/rounded_cornermediumwhite"
+                            android:drawableLeft="@drawable/ic_back"
+                            android:drawablePadding="8dp"
+                            android:onClick="onClickBack"
+                            android:padding="2dp"
+                            android:shadowColor="@color/perple"
+                            android:shadowDx="0"
+                            android:shadowDy="2"
+                            android:shadowRadius="15"
+                            android:textAllCaps="true"
+                            android:textColor="@color/perple"
+                            android:textSize="12dp"
+                            android:tint="@color/perple" />
+
+
+                        <LinearLayout
+                            android:layout_width="250dp"
+                            android:layout_height="450dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/rounded_cornermediumwhite"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:padding="20dp">
+
+                            <LinearLayout
+                                android:id="@+id/btnLayout"
+                                android:layout_width="210dp"
+                                android:padding="3dp"
+                                android:layout_height="41dp">
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/btnSave"
+                                    android:layout_width="59dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/rounded_corner"
+                                    android:onClick="onClickSave"
+                                    android:padding="1dp"
+                                    android:shadowColor="@color/perple"
+                                    android:shadowDx="0"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="3"
+                                    android:text="@string/save"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/perple"
+                                    android:textSize="9dp" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/btnRead"
+                                    android:layout_width="59dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/rounded_corner"
+                                    android:onClick="onClickRead"
+                                    android:padding="1dp"
+                                    android:shadowColor="@color/perple"
+                                    android:shadowDx="0"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="3"
+                                    android:text="@string/read"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/perple"
+                                    android:textSize="9dp" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/btnAddGroup"
+                                    android:layout_width="59dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/rounded_corner"
+                                    android:onClick="onClickAddGroup"
+                                    android:padding="1dp"
+                                    android:shadowColor="@color/perple"
+                                    android:shadowDx="0"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="3"
+                                    android:text="@string/add"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/perple"
+                                    android:textSize="9dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/EtUserName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+                                    android:background="@drawable/edit_text_background"
+                                    android:hint="@string/name"
+                                    android:padding="12dp" />
+
+                                <EditText
+                                    android:id="@+id/EtUserSecondName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+                                    android:background="@drawable/edit_text_background"
+                                    android:hint="@string/sevond_name"
+                                    android:padding="12dp" />
+                                <TextView
+                                    android:id="@+id/text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+                                    android:text="Работа с группами"
+                                    android:padding="3dp" />
+                                <EditText
+                                    android:id="@+id/newGroup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+                                    android:background="@drawable/edit_text_background"
+                                    android:hint="Добавить группу"
+                                    android:padding="12dp" />
+
+                                <Spinner
+                                    android:id="@+id/spinnerGroup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+                                    android:background="@drawable/edit_text_background"
+                                    android:backgroundTint="#D3FEFEFE"
+                                    android:padding="12dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

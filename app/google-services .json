@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "727541381216",
+    "project_id": "student-compare",
+    "storage_bucket": "student-compare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727541381216:android:f46d4e228848fe29feab05",
+        "android_client_info": {
+          "package_name": "com.example.studentcompare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhEcdWTSEeN_FyrNsCknhPni3jM5V-oMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

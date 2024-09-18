@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#0C6C63AC">
+
+    <TextView
+        android:id="@+id/tvRecommendationsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Рекомендации сравнения"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:textColor="@color/dark_perple"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvRecommendation1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Полное сравнение: для сравнения примитивных файлов с полным сходством строк."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dark_perple"
+        android:paddingBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvRecommendation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Сравнение без переменных: для похожих файлов, не учитывая переменные."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dark_perple"
+        android:paddingBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvRecommendation3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Сравнение по методам: для кодов большого размера с множеством методов."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dark_perple"
+        android:paddingBottom="12dp"/>
+    <TextView
+        android:id="@+id/tvRecommendation4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Объединённое сравнение: сравнение методом сита."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dark_perple" />
+</LinearLayout>

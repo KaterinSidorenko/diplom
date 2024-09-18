@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">StudentCompare</string>
+    <string name="login">Login</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="register">Register</string>
+    <string name="account_created">Account created</string>
+    <string name="click_to_login">Click to login</string>
+    <string name="click_to_registration">Click to registration</string>
+    <string name="log_out">log out</string>
+    <string name="save">Save</string>
+    <string name="read">Read</string>
+    <string name="name">Name</string>
+    <string name="sevond_name">Sevond name</string>
+    <string name="group">Group</string>
+    <string name="create">Create</string>
+    <string name="back">Back</string>
+    <string name="make_person_in_group">Make person in group</string>
+    <string name="see_your_email">See your email</string>
+    <string name="send_email_faled">Send email faled</string>
+    <string name="check_your_email">Check your email</string>
+    <string name="file_work">File Work</string>
+    <string name="ki_group">KI/</string>
+    <string name="posvt_group">POSVT/</string>
+    <string name="add">add</string>
+    <string name="share">Share</string>
+    <string name="coutnt_variant">Количество вариантов</string>
+    <string name="identical">" идентичны"</string>
+    <string name="razlichn">" различны"</string>
+    <string-array name="location_options">
+        <item>КИ</item>
+        <item>ПОСВТ</item>
+    </string-array>
+</resources>

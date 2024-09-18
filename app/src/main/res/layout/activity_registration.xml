@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/background_gradient">
+
+<LinearLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!-- New FrameLayout for additional shapes -->
+    <FrameLayout
+        android:id="@+id/shapeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent">
+
+        <!-- Triangle shape -->
+        <ImageView
+            android:id="@+id/triangleShape"
+            android:layout_width="520dp"
+            android:layout_height="520dp"
+            android:layout_marginTop="-50dp"
+            android:layout_marginEnd="120dp"
+            android:rotation="45"
+            android:src="@drawable/shape_triangle"
+            app:tint="@color/white" />
+
+        <!-- Small square shape -->
+        <ImageView
+            android:id="@+id/squareShape"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="-172dp"
+            android:layout_marginEnd="0dp"
+            android:rotation="45"
+            android:src="@drawable/shape_square"
+            app:tint="@color/perple" />
+
+        <!-- Linear gradient shape -->
+        <View
+            android:id="@+id/gradientShape"
+            android:layout_width="1174dp"
+            android:layout_height="540dp"
+            android:layout_marginTop="-24dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/background_gradient"
+            android:rotation="45" />
+
+
+        <FrameLayout
+            android:id="@+id/screen"
+            android:layout_width="360dp"
+            android:layout_height="600dp"
+            android:layout_gravity="center"
+            android:background="@drawable/screen_background">
+            <!-- Triangle shape -->
+            <ImageView
+                android:id="@+id/triangleShape4"
+                android:layout_width="520dp"
+                android:layout_height="520dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginEnd="120dp"
+                android:rotation="45"
+                android:src="@drawable/shape_triangle"
+                app:tint="#3EFFFFFF" />
+
+            <!-- Small square shape -->
+            <ImageView
+                android:id="@+id/squareShape3"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="-172dp"
+                android:layout_marginEnd="0dp"
+                android:rotation="45"
+                android:src="@drawable/shape_square"
+                app:tint="@color/perple" />
+
+
+            <!-- Screen Content -->
+            <LinearLayout
+                android:layout_width="325dp"
+                android:layout_height="567dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Login Form -->
+                <LinearLayout
+                    android:id="@+id/login"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="30dp"
+                    android:paddingTop="156dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="94dp"
+                        android:layout_marginTop="16dp"
+                        android:drawablePadding="8dp"
+                        android:gravity="bottom"
+                        android:onClick="onNotRegisteredClick"
+                        android:padding="16dp"
+                        android:shadowColor="#000000"
+                        android:shadowDx="0"
+                        android:shadowDy="2"
+                        android:shadowRadius="28"
+                        android:text="@string/register"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+                    <!-- Username Field -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/rounded_cornermediumwhite"
+                        android:gravity="center_vertical"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:id="@+id/userIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_user"
+                            app:tint="#7875B5" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/email"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:hint="@string/enter_email"
+                            android:paddingLeft="24dp"
+                            android:textColor="@color/dark_perple"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <!-- Password Field -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_cornermediumwhite"
+                        android:gravity="center_vertical"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:id="@+id/passwordIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_lock"
+                            app:tint="#7875B5" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/password"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:hint="@string/enter_password"
+                            android:inputType="textPassword"
+                            android:paddingLeft="24dp"
+                            android:textColor="@color/dark_perple"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <!-- Login Button -->
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="60dp"
+                        android:background="@drawable/rounded_corner"
+                        android:drawableEnd="@drawable/ic_chevron_righr"
+                        android:drawablePadding="8dp"
+                        android:padding="16dp"
+                        android:shadowColor="@color/perple"
+                        android:shadowDx="0"
+                        android:shadowDy="2"
+                        android:shadowRadius="15"
+                        android:text="@string/register"
+                        android:textAllCaps="true"
+                        android:textColor="#4C489D"
+                        android:textSize="15sp" />
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginTop="16dp"/>
+                    <TextView
+                        android:id="@+id/loginNow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:clickable="true"
+                        android:drawablePadding="8dp"
+                        android:gravity="bottom"
+                        android:padding="16dp"
+                        android:shadowColor="#000000"
+                        android:shadowDx="0"
+                        android:shadowDy="2"
+                        android:shadowRadius="28"
+                        android:text="@string/click_to_login"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>
+
+</RelativeLayout>
+

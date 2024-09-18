@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Работа со студентами</string>
+    <string name="login">Логин</string>
+    <string name="enter_email">Введите почту</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="register">Регистрация</string>
+    <string name="account_created">Создать аккаунт</string>
+    <string name="click_to_login">Переход во вход</string>
+    <string name="click_to_registration">Зарегестрироваться</string>
+    <string name="log_out">Выйти</string>
+    <string name="save">Сохранить</string>
+    <string name="read">Прочесть</string>
+    <string name="name">Имя</string>
+    <string name="sevond_name">Фамилия</string>
+    <string name="group">Группа</string>
+    <string name="create">Создать</string>
+    <string name="back">Back</string>
+    <string name="make_person_in_group">Добавить студента в группу</string>
+    <string name="see_your_email">Посмотреть почту</string>
+    <string name="send_email_faled">Отправка email не удалась</string>
+    <string name="check_your_email">проверьте вашу почту</string>
+    <string name="file_work">Работа с файлами</string>
+    <string name="ki_group">KI/</string>
+    <string name="posvt_group">POSVT/</string>
+    <string name="add">Добавить</string>
+    <string name="share">Поделиться</string>
+    <string name="coutnt_variant">Количество вариантов</string>
+    <string name="identical">" идентичны"</string>
+    <string name="razlichn">" различны"</string>
+</resources>

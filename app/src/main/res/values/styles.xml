@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@drawable/btn_main</item>
+        <item name="android:drawableEnd">@drawable/ic_chevron_righr</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:shadowColor">@color/perple</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">#4C489D</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

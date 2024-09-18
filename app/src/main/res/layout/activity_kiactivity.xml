@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!-- New FrameLayout for additional shapes -->
+        <FrameLayout
+            android:id="@+id/shapeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent">
+
+            <!-- Triangle shape -->
+            <ImageView
+                android:id="@+id/triangleShape"
+                android:layout_width="520dp"
+                android:layout_height="520dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginEnd="120dp"
+                android:rotation="45"
+                android:src="@drawable/shape_triangle"
+                app:tint="@color/white" />
+
+            <!-- Small square shape -->
+            <ImageView
+                android:id="@+id/squareShape"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="-172dp"
+                android:layout_marginEnd="0dp"
+                android:rotation="45"
+                android:src="@drawable/shape_square"
+                app:tint="@color/perple" />
+
+            <!-- Linear gradient shape -->
+            <View
+                android:id="@+id/gradientShape"
+                android:layout_width="1174dp"
+                android:layout_height="540dp"
+                android:layout_marginTop="-24dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/background_gradient"
+                android:rotation="45" />
+
+
+            <FrameLayout
+                android:id="@+id/screen"
+                android:layout_width="360dp"
+                android:layout_height="600dp"
+                android:layout_gravity="center"
+                android:background="@drawable/screen_background">
+
+
+                <!-- Triangle shape -->
+                <ImageView
+                    android:id="@+id/triangleShape4"
+                    android:layout_width="520dp"
+                    android:layout_height="520dp"
+                    android:layout_marginTop="-50dp"
+                    android:layout_marginEnd="120dp"
+                    android:rotation="45"
+                    android:src="@drawable/shape_triangle"
+                    app:tint="#3EFFFFFF" />
+
+                <!-- Small square shape -->
+                <ImageView
+                    android:id="@+id/squareShape3"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="-172dp"
+                    android:layout_marginEnd="0dp"
+                    android:rotation="45"
+                    android:src="@drawable/shape_square"
+                    app:tint="@color/perple" />
+
+
+                <!-- Screen Content -->
+                <LinearLayout
+                    android:layout_width="325dp"
+                    android:layout_height="567dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <!-- Login Form -->
+                    <LinearLayout
+                        android:layout_width="320dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="30dp"
+                        android:paddingTop="156dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btnback"
+                                android:layout_width="28dp"
+                                android:layout_height="26dp"
+                                android:layout_gravity="start"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginRight="200dp"
+                                android:background="@drawable/rounded_cornermediumwhite"
+                                android:drawableLeft="@drawable/ic_back"
+                                android:drawablePadding="8dp"
+                                android:onClick="onClickBackKI"
+                                android:padding="2dp"
+                                android:shadowColor="@color/perple"
+                                android:shadowDx="0"
+                                android:shadowDy="2"
+                                android:shadowRadius="15"
+                                android:textAllCaps="true"
+                                android:textColor="@color/perple"
+                                android:textSize="12dp"
+                                android:tint="@color/perple" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btninstruct"
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:layout_gravity="start"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/rounded_cornermediumwhite"
+                                android:drawableLeft="@drawable/ic_question"
+                                android:drawablePadding="8dp"
+                                android:padding="2dp"
+                                android:shadowColor="@color/perple"
+                                android:shadowDx="0"
+                                android:shadowDy="2"
+                                android:shadowRadius="15"
+                                android:textAllCaps="true"
+                                android:textColor="@color/perple"
+                                android:textSize="12dp"
+                                android:tint="@color/perple" />
+
+
+                        </LinearLayout>
+
+                        >/
+
+                        <LinearLayout
+                            android:layout_width="250dp"
+                            android:layout_height="450dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/rounded_cornermediumwhite"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:padding="20dp">
+
+                            <LinearLayout
+                                android:id="@+id/btnLayout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp">
+
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/btnaddFile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/rounded_corner"
+                                    android:padding="5dp"
+                                    android:shadowColor="@color/perple"
+                                    android:shadowDx="0"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="15"
+                                    android:text="@string/group"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/perple"
+                                    android:textSize="12dp" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/btnCompare"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:background="@drawable/rounded_corner"
+                                    android:padding="5dp"
+                                    android:shadowColor="@color/perple"
+                                    android:shadowDx="0"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="15"
+                                    android:text="Сравнить"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/perple"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                            <WebView
+                                android:id="@+id/webView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:visibility="gone" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerViewFiles"
+                                android:layout_width="match_parent"
+                                android:layout_height="316dp"
+                                android:layout_below="@id/btnLayout"
+                                android:layout_marginTop="7dp" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/buttonOpenFile"
+                                style="@style/CustomButtonStyle"
+                                android:text="Добавить файл" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>
